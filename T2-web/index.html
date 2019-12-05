@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TP2</title>
+</head>
+<body>
+   
+    <div class="barra1">
+        <ul>
+            <p>Task Panel</p>
+            <div class="novo">
+                <p id="modal-btn"><a>New Task</a></p>
+            </div>
+            </ul>
+    </div>
+    <div class ="progressBar">
+        <div id="barra-toDo"></div>
+        <div id="barra-inProgress"></div>
+        <div id="barra-review"></div>
+        <div id="barra-complete"></div>
+    </div>
+    <div id="taskModal" class="modal">
+        <div class="corpomodal">
+            <div class="barraModal">
+                <b>New Task</b>
+               
+            </div>
+            <div class="conteudoModal">
+                <p>Task</p>
+                <textarea id="taskTitulo" class="taskTitulo" cols="30" rows="1"></textarea>
+                <p>Description</p>
+                <textarea id="taskDescricao" class="taskDescricao" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="alert" class="modal">
+      <div class="modalab">
+       <div class="barraModal">
+        <b> alerta!<b>
+          <span class="close">X</span>
+        </div>
+        <div class="conteudoModal">
+        <p> Preencha todos os campos</p>
+        </div>
+      </div>
+    </div> 
+
+    </div>
+    <div class ="corpo">
+    <div class= "tabelas">
+        <div class ="texto">
+            <p>To do</p>
+            <div class="cortd"></div>
+        </div>
+        <div id="to-do" class="task-content" >
+            <div class="task" onClick="moveTaskForward(event)">
+                <b>Trabalho de ED II</b>
+                <p>Entrega: 05/10/2020</p>
+            </div>
+        </div>
+    </div>
+    <div class= "tabelas">
+        <div class ="texto">
+             <p>In progress</p>
+             <div class="corip"></div>
+        </div>
+        <div id="in-progress" class="task-content">
+            <div class="task" onClick="moveTaskForward(event)">
+                <b>Trabalho em Grupo</b>
+                <p>Entrega: 04/02/2020</p>
+            </div>
+        </div>
+    
+    </div>
+    <div class= "tabelas">
+            <div class ="texto">
+                <p>Review</p>
+                <div class="corrv"></div>
+            </div>   
+            <div id="review" class="task-content">
+                <div class="task"onClick="moveTaskForward(event)">
+                    <b> Trabalho de Web</b>
+                    <p>Entrega: 20/12/2019 </p>
+                </div>
+            </div> 
+    </div>
+    <div class= "tabelas">
+        <div class ="texto">
+            <p>Complete</p>
+            <div class="corcp"></div>
+        </div> 
+        <div id="complete" class="task-content">
+            <div class="task" onClick="moveTaskForward(event)">
+                <b >Atividade Trabalho</b>
+                <p>Entrega: 02/02/2019</p>
+            </div>
+        </div>
+    </div>    
+</div>
+<script src="script.js">
+  </script>
+</body>
+</html>
